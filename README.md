@@ -1,4 +1,4 @@
-# AnnieCannons Introduction to the Terminal, Git, and Github
+# AnnieCannons Introduction to the Terminal and CommandLine
 
 This module will introduce how to use the command line on your computer. This will also cover using Git, a version control software, and Github, a website that will allow us to create remote code repositories. It includes:
 
