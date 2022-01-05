@@ -64,24 +64,24 @@
 				<p>These skills are critical for:</p>
 				<ul>
 					<li class="fragment">Learning new tools</li>
-					<li class="fragment">Collaborating with teams</li>
+					<li class="fragment lightgreen">Collaborating with teams</li>
 					<li class="fragment">Working with new JavaScript frameworks</li>
-					<li class="fragment">Securing your code</li>
+					<li class="fragment lightgreen">Securing your code</li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>What is a Shell?</h2>
 				<p class="fragment">A text-based command interpreter</p>
-				<p class="fragment">The most common shell (and default on OS X) is BASH</p>
-				<p class="fragment">Newer macOS's are on ZSH, which are more customizable.</p>
-				<p class="fragment">For OS X, use a shell via the “Terminal” app.</p> 
+				<p class="fragment">The most common shell (and default on OS X) is <span class="aqua">BASH</span></p>
+				<p class="fragment">Newer macOS's are on <span class="aqua">ZSH</span>, which are more customizable.</p>
+				<p class="fragment">For OS X, use a shell via the “<span class="aqua">Terminal</span>” app.</p> 
 			 </section>
 
 			<section>
 				<h2>What is the Terminal?</h2>
-				<p>The terminal is an interface in which you can type and execute text based commands.</p>
-				<p class="fragment">This is how we access our Command Line Interface (CLI).</p>
+				<p>The terminal is an interface in which you can type and execute text-based commands.</p>
+				<p class="fragment">This is how we access our <span class="yellow">Command Line Interface</span> (CLI).</p>
 			  </section>
 
 			<section>
@@ -92,7 +92,7 @@
 			<section>
 				<h2>What is the Terminal?</h2>
 				<p>The terminal is the original interface for computers, before the invention of the GUI.</p>	
-				<p>All commands, folder & directory creation, as well as application installations were all done in the terminal.</p>		
+				<p>All commands, folder & directory creation, as well as application installations, were all done in the terminal.</p>		
 			</section>
 
 			<!-- <section>
@@ -136,34 +136,36 @@
 				<h2>Why Use the Terminal?</h2>
 				<ul>
 					<li class="fragment">Automate file actions with a script</li>
-					<li class="fragment">Serve a local directory for testing</li>
+					<li class="fragment lightgreen">Serve a local directory for testing</li>
 					<li class="fragment">Use version control (like Git)</li>
-					<li class="fragment">Run open source projects</li>
+					<li class="fragment lightgreen">Run open source projects</li>
 					<li class="fragment">Use automated build tools</li>
-					<li class="fragment">Connect to your servers</li>
+					<li class="fragment lightgreen">Connect to your servers</li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>The Prompt</h2>
-				<p>Usually shows your username and computer name (hostname).</p>
+				<p>Usually shows your username and computer name (<span class="yellow">hostname</span>).</p>
 				<p>It indicates that the shell is ready for you to enter a command.</p>
 				<img src="images/prompt.png" alt="Terminal Prompt">
 			</section>
 
 			<section>
 				<h2>The Current Directory</h2>
-				<p><code contenteditable>pwd</code> (Print Working Directory)</p>
+				<p><code contenteditable class="aqua">pwd</code> (Print Working Directory)</p>
 				<p>Type it whenever you want to see what directory (folder) you’re in.</p>
 				<p>TRY It!</p>
 			</section>
 
 			<section>
 				<h2>Directories</h2>
-				<p>Containers for files or other directories.</p>
-				<p>Directories are also referred to as "folders".</p>
-				<p>Nested files and directories can be referenced using paths.</p>
-				<p>Who remembers the difference between absolute and relative paths?</p>
+				<ul>Directories are:
+					<li>also known as "folders"</li>
+					<li>containers for files or other directories</li>
+				</ul>	
+				<p>Nested files and directories can be referenced using <span class="yellow">paths</span>.</p>
+				<p>Review: How are absolute and relative paths different?</p>
 			</section>
 			
 			<!-- <section>
@@ -192,8 +194,8 @@
 				<!-- <h2>Unix File System</h2> -->
 				<h2>The File System</h2>
 				<!-- <p>In Unix, files are contained in  -->
-					<p>Directories are organized in a tree-like structure. The top level directory is named “root” and represented
-					by the single character ‘/’ known as the “front slash”.</p>
+					<p>Directories are organized in a tree-like structure. The top level directory is named “<span class="aqua">root</span>” and represented
+					by the single character ‘<span class="aqua">/</span>’ known as the “front slash”.</p>
 				<img data-enlargable height="300" style="border: 5px solid blue; cursor: zoom-in;"
 					src="images/systemPic.png" style="height: 35vh" />
 			</section>
@@ -203,7 +205,7 @@
 				<h2>The File System</h2>
 				<img data-enlargable height="300" style="border: 5px solid blue; cursor: zoom-in;"
 					src="images/unix-file-system-mac.png" alt="Unix File System" style="height: 35vh">
-				<p>Take a few minutes and write the path from the root directory at "/" to get to "carol".</p>
+				<p>Take a few minutes and write the path from the root directory at "<span class="aqua">/</span>" to get to "<span class="aqua">carol</span>".</p>
 				<aside class="notes">In Finder, trainees can switch on the path bar.</aside>
 				<!-- <p>Take a few minutes and write the relative path starting at 'carol' and ending at 'Library'</p> -->
 			</section>
@@ -244,10 +246,10 @@
 
 			<section>
 				<h2>The command for changing directories</h2>
-				<code>cd</code>
-				<p><code>cd</code> means "change directory."</p>
-				<p>parent-to-child: cd [folder name]</p>
-				<p>child-to-parent: cd ..</p>
+				<code class="aqua">cd</code>
+				<p><code class="aqua">cd</code> means "change directory."</p>
+				<p>parent-to-child: <code class="aqua">cd folder-name</code></p>
+				<p>child-to-parent: <code class="aqua">cd ..</code></p>
 				<!-- <p>Without a command line argument (CLA*), <code>cd</code> switches to your home directory
 					(computername:~ username) no matter where you are in the file system.</p>
 				<p>*A CLA is the list of words that proceed the command.
@@ -262,9 +264,9 @@
 					<li><code>cd <span style="color:yellow;">&lt;symbolic path&gt;</span></code></li>
 				</ul>
 				<ul>
-					<li class="fragment" style="list-style-type: none;"> -> <code>cd ../exampleDir</code></li>
-					<li class="fragment" style="list-style-type: none;"> -> <code>cd /exampleDir/newFolder</code></li>
-					<li class="fragment" style="list-style-type: none;"> -> <code>cd ~/exampleDir</code></li>
+					<li class="fragment" style="list-style-type: none;"> -> <code class="aqua">cd ../exampleDir</code></li>
+					<li class="fragment" style="list-style-type: none;"> -> <code class="aqua">cd /exampleDir/newFolder</code></li>
+					<li class="fragment" style="list-style-type: none;"> -> <code class="aqua">cd ~/exampleDir</code></li>
 				</ul>
 				<aside class="notes">../ is based on this folder you're currently in, navigate up to its parent, then navigate down into example directory.absolute path - tell Terminal where we want to end up based on where we are now. symbolic path is when we use a character like a ~ to reference a starting point; the ~ references the user's home folder in this example.</aside>
 			</section>
@@ -272,7 +274,7 @@
 			<section>
 				<h2>Practice I</h2>
 				<p>Given our current working directory, how would you go to the new working directory?</p>
-				<img src="images/systemPic.png" style="height: 40vh" />
+				<img data-enlargable style="height: 30vh; border: 5px solid blue; cursor: zoom-in;" src="images/systemPic.png" />
 				<div style="font-size: .5em">
 					<table>
 						<tr>
@@ -281,7 +283,7 @@
 							<td width="20%">cd command using relative path</td>
 							<td width="20%">new working directory</td>
 						</tr>
-						<tr>
+						<tr class="aqua">
 							<td>/home/bob</td>
 							<td class="fragment"><code style="font-size:1em">cd /home/bob/class</code></td>
 							<td class="fragment"><code style="font-size:1em">cd ./class</code></td>
@@ -295,7 +297,7 @@
 			<section>
 				<h2>Practice II</h2>
 				<p>Given our current working directory, how would you go to the new working directory?</p>
-				<img src="images/systemPic.png" style="height: 40vh" />
+				<img data-enlargeable src="images/systemPic.png" style="height: 30vh; border: 5px solid blue; cursor: zoom-in;"/>
 				<div style="font-size: .5em">
 					<table>
 						<tr>
@@ -304,7 +306,7 @@
 							<td width="20%">cd command using relative path</td>
 							<td width="20%">new working directory</td>
 						</tr>
-						<tr>
+						<tr class="aqua">
 							<td>/home/bob</td>
 							<td class="fragment"><code style="font-size:1em">cd /home/mary/temp</code></td>
 							<td class="fragment"><code style="font-size:1em">cd ../mary/temp</code></td>
@@ -326,12 +328,28 @@
 
 			<section>
 				<h2>Reviewing Paths</h2>
-				<ul>
-					<li>Current Directory: (.)</li>
-					<li>Parent Directory: (..)</li>
-					<li>Home Directory: (~)</li>
-					<li>Root Directory: (/)</li>
-				</ul>
+				<table>
+					<tr>
+						<th>Working Directory</th>
+						<th>Command</th>
+					</tr>
+					<tr>
+						<td>Current Directory</td>
+						<td><span class="aqua">.</span></td>
+					</tr>
+					<tr>
+						<td>Parent Directory</td>
+						<td><span class="aqua">..</span></td>
+					</tr>
+					<tr>
+						<td>Home Directory</td>
+						<td><span class="aqua">~</span></td>
+					</tr>
+					<tr>
+						<td>Root Directory</td>
+						<td><span class="aqua">/</span></td>
+					</tr>
+				</table>
 			</section>
 
 			<section>
@@ -342,24 +360,24 @@
 						<th>Action</th>
 					</tr>
 					<tr class="fragment">
-						<td><code>ls</code></td>
+						<td><code class="aqua">ls</code></td>
 						<td>List what is in the current directory.</td>
 					</tr>
 					<tr class="fragment">
-						<td><code>cd</code></td>
+						<td><code class="aqua">cd</code></td>
 						<td>Change directory.</td>
 					</tr>
 					<tr class="fragment">
-						<td><code>mkdir</code></td>
+						<td><code class="aqua">mkdir</code></td>
 						<td>Make a new directory.</td>
 					</tr>
 					<tr class="fragment">
-						<td><code>touch</code></td>
+						<td><code class="aqua">touch</code></td>
 						<td>Create or update an existing file's timestamp. The touch command expects the name of your
 							new file as an argument.</td>
 					</tr>
 					<tr class="fragment">
-						<td><code>mv</code></td>
+						<td><code class="aqua">mv</code></td>
 						<td>Move a file from one place to another. See <a
 								href="https://support.apple.com/guide/terminal/move-and-copy-files-apddfb31307-3e90-432f-8aa7-7cbc05db27f7/mac"
 								target="_blank">Docs</a>.</td>
@@ -385,17 +403,17 @@
 				<p>Some commands have additional options that allow flags.</p>
 				<p>Flags are preceded by a hyphen, and are often a single character.</p>
 				<img src="images/ls.png" alt="">
-				<p><code>ls -a</code> = show hidden files</p>
-				<p><code>ls -l</code> = use a “long list” format (shows more verbose output)</p>
+				<p><code class="aqua">ls -a</code> = show hidden files</p>
+				<p><code class="aqua">ls -l</code> = use a “long list” format (shows more verbose output)</p>
 			</section>
 
 			<section>
 				<h2>Terminal Commands</h2>
 				<ul>
-					<li class="fragment">The left/right arrow keys let you edit within a command
-					<li class="fragment">The up/down arrow keys let you select previous commands
-					<li class="fragment">CTRL+A goes to beginning of command, CTRL+E to the end.
-					<li class="fragment">The tab auto-completes file names! Best friend!
+					<li class="fragment">The <span class="yellow">left/right</span> arrow keys let you edit within a command.
+					<li class="fragment">The <span class="yellow">up/down</span> arrow keys let you select previous commands.
+					<li class="fragment"><span class="yellow">CTRL+A</span> goes to beginning of command;<br><span class="yellow">CTRL+E</span> to the end.
+					<li class="fragment">The <span class="yellow">tab</span> auto-completes file names! Best friend!
 				</ul>
 				<aside class="notes">Show the last command, the tab auto-completing when you are in a folder.</aside>
 			</section>
@@ -411,11 +429,11 @@
 
 			<section>
 				<h2>Command Line Project</h2>
-				<p>Use Terminal to make the folder system called:<br>terminal-practice</p>
+				<p>Use Terminal to make the folder system called:<br><span class="aqua">terminal-practice</span></p>
 				<ul>
-					<li>Create the root folder in your Documents folder</li>
-					<li>Make sure to add folders for your CSS and JS</li>
-					<li>Add a new index.html file</li>
+					<li>Create the root folder in your <span class="aqua">Documents</span> folder.</li>
+					<li>Make sure to add folders for your CSS and JS.</li>
+					<li>Add a new <span class="aqua">index.html</span> file.</li>
 				</ul>
 				<img src="images/exercise.gif" alt="Exercise time" />
 				<a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript"
